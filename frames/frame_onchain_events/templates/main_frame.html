@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <meta property="fc:frame" content="vNext" />
+    <meta property="fc:frame:image" content="/image/{{image}}" />
+    <meta property="og:image" content="/image/{{image}}" />
+    {% for _btn in buttons %}
+    <meta property="fc:frame:button:{{loop.index}}" content="{{_btn[0]}}" />
+    <meta property="fc:frame:button:{{loop.index}}:action" content="{{_btn[1]}}" />
+    {% if _btn | length > 2 and (_btn[1] == "link" or _btn[1] == "tx" or _btn[1] == "post_redirect") %}
+    <meta property="fc:frame:button:{{loop.index}}:target" content="{{_btn[2]}}" />
+    {% endif %}
+    {% endfor %}
+    <meta property="fc:frame:post_url" content="{{post_url}}" />
+    {% if text_placeholder %}
+    <meta property="fc:frame:input:text" content="{{text_placeholder}}" />
+    {% endif %}
+  </head>
+</html>

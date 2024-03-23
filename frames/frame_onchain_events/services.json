@@ -1,0 +1,6 @@
+{
+  "port": 10000,
+  "the_graph_rpc": "",
+  "PINATA_BEARER": "",
+  "mongo": {"connectionString": "mongodb://localhost:27017/{YOUR_DB}"}
+}

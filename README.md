@@ -3,6 +3,16 @@ FGE(Frame Generator Engine) - Farcaster Frames Client. Create Frames with No Cod
 
 TOCD will support your Frames no matter what. Only for people good.
 
+## Live Video
+
+<div>
+    <a href="https://www.loom.com/share/578b304830214e9ba07d1836a46bf326">
+      <p>How to create Frames with NO Code Skills - It's Easy with FGE. Top Frames on Farcaster with FGE - Watch Video</p>
+    </a>
+    <a href="https://www.loom.com/share/578b304830214e9ba07d1836a46bf326">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/578b304830214e9ba07d1836a46bf326-with-play.gif">
+    </a>
+  </div>
 
 ## Farcaster Frames made by FGE or forked by FGE
 https://github.com/The-Old-Castle-Defense/FGE/tree/main/fge_app
@@ -12,9 +22,11 @@ https://github.com/The-Old-Castle-Defense/FGE/tree/main/frames/frame_cross_chain
 
 #### OnChain Events of TOCD Protocol with TheGraph
 https://github.com/The-Old-Castle-Defense/FGE/tree/main/frames/frame_onchain_events
+Video: https://www.loom.com/share/ea620424706d400690b6ad85a254d408
 
 #### Frames Analytics & Farcaster's Data with Pinata
 https://github.com/The-Old-Castle-Defense/FGE/blob/main/frames/frame_onchain_events/pinata.py
+Video: https://www.loom.com/share/1434ee81850546068bd73cfec0901b35
 
 # Setting Up Google Sheets API Credentials
 To integrate Google Sheets with the Farcaster's Frame Generator Engine, you'll need to create a credentials.json file. This file enables your application to authenticate with Google's API and interact with Google Sheets. Follow these steps to generate your credentials file:

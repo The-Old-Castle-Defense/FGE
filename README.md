@@ -4,6 +4,18 @@ FGE(Frame Generator Engine) - Farcaster Frames Client. Create Frames with No Cod
 TOCD will support your Frames no matter what. Only for people good.
 
 
+## Farcaster Frames made by FGE or forked by FGE
+https://github.com/The-Old-Castle-Defense/FGE/tree/main/fge_app
+
+#### Cross-Chain Bridge BASE <> OPTIMISM made with DeBridge integration
+https://github.com/The-Old-Castle-Defense/FGE/tree/main/frames/frame_cross_chain_trades
+
+#### OnChain Events of TOCD Protocol with TheGraph
+https://github.com/The-Old-Castle-Defense/FGE/tree/main/frames/frame_onchain_events
+
+#### Frames Analytics & Farcaster's Data with Pinata
+https://github.com/The-Old-Castle-Defense/FGE/blob/main/frames/frame_onchain_events/pinata.py
+
 # Setting Up Google Sheets API Credentials
 To integrate Google Sheets with the Farcaster's Frame Generator Engine, you'll need to create a credentials.json file. This file enables your application to authenticate with Google's API and interact with Google Sheets. Follow these steps to generate your credentials file:
 
@@ -28,3 +40,5 @@ Use credentials.json with Farcaster's Frame Generator Engine: Place the credenti
 By following these steps, you should have the credentials.json file needed to authenticate and interact with Google Sheets through the Farcaster's Frame Generator Engine.
 
 **Online Guide with images**: https://medium.com/@a.marenkov/how-to-get-credentials-for-google-sheets-456b7e88c430
+
+

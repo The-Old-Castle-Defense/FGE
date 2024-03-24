@@ -9,11 +9,9 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 from db import db
 from config import config
-from config import bot
 
 config.init_config()
 db.connect_to_database(config.connectionString)
-bot.init(config.tg_bot_token, config.tg_log_channel)
 
 def main():
     """
@@ -23,7 +21,6 @@ def main():
     scope = ['https://spreadsheets.google.com/feeds']
     creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json', scope)
     client = gspread.authorize(creds)
-    print("AIRDROP")
     update_competitions(client)
 
 
@@ -50,8 +47,8 @@ def update_competitions(client):
         print(_data)
         for _x in _data:
             _x['updated_at'] = datetime.datetime.utcnow()
-            _x['follow_check'] = True if _x['follow_check'].lower() == "true" else None
-            _x['add_user'] = True if _x['add_user'].lower() == "true" else None
+            # _x['follow_check'] = True if _x['follow_check'].lower() == "true" else None
+            # _x['add_user'] = True if _x['add_user'].lower() == "true" else None
             _x['image'] = json.loads(_x['image']) if _x['image'] else []
             _x['buttons'] = json.loads(_x['buttons']) if _x['buttons'] else []
             _x['buttons_handler'] = json.loads(_x['buttons_handler']) if _x['buttons_handler'] else []

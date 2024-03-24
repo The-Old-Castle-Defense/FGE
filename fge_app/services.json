@@ -1,6 +1,6 @@
 {
   "port": 10000,
-  "theGraph_rpc": "",
+  "the_graph_rpc": "",
   "PINATA_BEARER": "",
   "FGE_SPREADSHEET": "",
   "mongo": {"connectionString": "mongodb://localhost:27017/{YOUR_DB}"},
@@ -11,13 +11,6 @@
           "type": "ERC20",
           "explorer_link":"https://basescan.org/tx/",
           "rpc": "https://mainnet.base.org"
-      },
-      "10": {
-          "id": 10,
-          "name": "OP",
-          "type": "ERC20",
-          "explorer_link":"https://optimistic.etherscan.io/tx/",
-          "rpc": "https://optimism-mainnet.public.blastapi.io"
       }
   }
 }

@@ -53,4 +53,79 @@ By following these steps, you should have the credentials.json file needed to au
 
 **Online Guide with images**: https://medium.com/@a.marenkov/how-to-get-credentials-for-google-sheets-456b7e88c430
 
+# Guide to Creating a Frame with FGE
+
+## Step 0: Open Google Form by following the link
+Click here: https://docs.google.com/forms/d/e/1FAIpQLSfhvuW9ITz3fuAo4R78T3ksulLfrvHTWX6_3wynR_lUZUqgFw/viewform
+
+## Step 1: Enter the FrameID
+**Description:** FrameID is a unique identifier for your Frame. Think of it as a unique name that distinguishes your Frame from others.
+
+**Rules:** It must be unique, that is, different from other FrameIDs in the Frame Group (about the Frame Group in the next step).
+
+**Example:** `saturday` or `test_1`
+
+## Step 2: Enter the GroupID:
+**Description:** GroupID is an identifier used to access a Frame Group (a set of Frames with a FrameID).
+
+**Rules:** Try to come up with an ID that will combine all your FrameIDs. For example, if the set of your FrameIDs is <Saturday> and <Sunday>, then it is logical to call the GroupID "Weekend". Don't forget this ID, it will still be useful to you.
+
+**Example:** `weekend`
+
+_Your Frame Group will be accessible via https://fc.theoldcastle.xyz/frame/{GroupID}_
+
+## Step 3: Title
+**Description:** Give your Frame a title. This should be succinct and reflective of the content or the action encouraged by the Frame.
+
+**Rules:** It may not be unique.
+
+**Example:** `View the days of the weekend!`
+
+## Step 4: Buttons
+**Description:** Define the buttons you want to include. You need at least one button.
+
+**Rules:** Each button array consists of the button name, the action type ("post" or "link"), and optionally, the URL if the action type is "link":
+```
+[["Btn1_name", "post"], ["Btn2_name", "post"], ["Btn3_name", "link", "link"]]
+```
+
+**Example:** `[["👉The next day", "post"]]`
+
+## Step 5: Image and Text Positioning
+**Description:** Specify where you want your image and text to appear within the Frame.
+
+**Rules:** The format is:
+```
+[["image_url"], [x, y, "Text", "#Color", FONT_SIZE]]`
+```
+
+**Example:** `[["https://i.ibb.co/Km2czWx/saturday.png"], [33, 33, "It’s Saturday!", "#de7676", 16]]`
+
+## Step 6: Input [Text Placeholder] (Optional)
+**Description:** An input field for user interaction, specify a placeholder text.
+
+**Rules:** This field is optional if you do not need to receive a response from the user in the frame.
+
+**Example:** `Write a "+" if you like this day`
+
+## Step 7: Next Frame URL (URL will navigate to your next Frame)
+**Description:** The next frame, which is part of a sequence in a Group of Frames, i.e. you want to redirect users to another Frame after the interaction.
+
+**Rules:** 
+- Specify the Next URL in the format: `https://fc.theoldcastle.xyz/api/next/{FrameID}`
+- For buttons that navigate to other Frames, append: `?btn_1={frame_link}&btn_2={frame_link}`
+
+**Example:** `https://fc.theoldcastle.xyz/api/next/saturday?btn_1=sunday`
+
+## Step 8: Open Warpcast Dev Tools by following the link
+Click here: https://warpcast.com/~/developers/frames
+
+## Step 9: Put the link to the Warpcast Dev Tools
+Do you remember GroupID? Add it to the link template and paste it into the "URL" field
+
+**Template:** `https://fc.theoldcastle.xyz/frame/{GroupID}`
+
+**Example:** `https://fc.theoldcastle.xyz/frame/weekend`
+
+Ready! Now you can test the operation of your Frame
 

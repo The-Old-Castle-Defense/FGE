@@ -72,7 +72,7 @@ Click here: https://docs.google.com/forms/d/e/1FAIpQLSfhvuW9ITz3fuAo4R78T3ksulLf
 
 **Example:** `weekend`
 
-_Your Frame Group will be accessible via https://fc.theoldcastle.xyz/frame/{GroupID}_
+_Your Frame Group will be accessible via `https://fc.theoldcastle.xyz/frame/{GroupID}`_
 
 ## Step 3: Title
 **Description:** Give your Frame a title. This should be succinct and reflective of the content or the action encouraged by the Frame.
